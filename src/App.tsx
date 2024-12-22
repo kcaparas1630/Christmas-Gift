@@ -1,7 +1,8 @@
-
+import './App.css';
+import Login from './Views/Login';
 
 const App = () =>  (
-  <h1>Hello World</h1>
+  <Login />
 );
 
 export default App

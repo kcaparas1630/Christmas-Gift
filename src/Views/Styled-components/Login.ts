@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import CircleCoordinates from "../../Interface/CircleCoordinates";
+import StyledLoginInterface from "../../Interface/CircleCoordinates";
 
 const LoginSection = styled.section`
   label: LoginSection;
@@ -9,6 +9,7 @@ const LoginSection = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 `;
 
 const FormContainer = styled.div`
@@ -94,7 +95,7 @@ const TrimTicket = styled.div`
   position: relative;
 `;
 
-const CircleTopper = styled.div<CircleCoordinates>`
+const CircleTopper = styled.div<StyledLoginInterface>`
     width: ${(props) => props.size ? props.size : '70px'};
     height: ${(props) => props.size ? props.size : '70px'};
     border-radius: 100%;
@@ -129,6 +130,15 @@ const SubmitButton = styled.button`
   }
 `;
 
+const HeartLine = styled.img<StyledLoginInterface>`
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    left: ${(props) => props.left ? props.left : '0' };
+    top: ${(props) => props.top ? props.top : '0' };
+    transform: ${(props) => props.rotate && 'rotateY(180deg)'};
+`;
+
 export {
   LoginSection,
   FormContainer,
@@ -141,4 +151,5 @@ export {
   CircleTopper,
   H3Text,
   SubmitButton,
+  HeartLine,
 };

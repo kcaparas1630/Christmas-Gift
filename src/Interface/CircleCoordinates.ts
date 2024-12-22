@@ -1,7 +1,8 @@
-interface CircleCoordinates {
+interface StyledLoginInterface {
     left?: string,
     top?: string,
     size?: string,
+    rotate?: boolean,
 };
 
-export default CircleCoordinates;
+export default StyledLoginInterface;

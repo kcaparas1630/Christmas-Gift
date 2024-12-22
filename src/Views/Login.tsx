@@ -1,4 +1,5 @@
 import { FC } from "react";
+import HeartLineImg from "../assets/heart-line.png";
 import {
   FormContainer,
   LoginSection,
@@ -11,6 +12,7 @@ import {
   CircleTopper,
   H3Text,
   SubmitButton,
+  HeartLine,
 } from "./Styled-components/Login";
 
 const Login: FC = () => {
@@ -75,6 +77,19 @@ const Login: FC = () => {
         <CircleTopper size="90px" top="40px" left="17%" />
         <CircleTopper top="30px" left="95%" />
       </TrimTicket>
+      <HeartLine
+        src={HeartLineImg}
+        alt="heart line banner image"
+        top="60%"
+        left="0"
+      />
+      <HeartLine
+        src={HeartLineImg}
+        alt="heart line banner image"
+        top="-15%"
+        left="60%"
+        rotate
+      />
     </LoginSection>
   );
 };

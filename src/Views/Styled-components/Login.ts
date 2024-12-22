@@ -139,6 +139,22 @@ const HeartLine = styled.img<StyledLoginInterface>`
     transform: ${(props) => props.rotate && 'rotateY(180deg)'};
 `;
 
+const Heartbeat = styled.div`
+  display: flex;
+  gap: 24px;
+`;
+
+const LoadingContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  p {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+  }
+`;
+
 export {
   LoginSection,
   FormContainer,
@@ -152,4 +168,6 @@ export {
   H3Text,
   SubmitButton,
   HeartLine,
+  Heartbeat,
+  LoadingContainer
 };

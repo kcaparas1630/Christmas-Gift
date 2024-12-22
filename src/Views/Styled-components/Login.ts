@@ -150,7 +150,7 @@ const LoadingContainer = styled.div`
   gap: 24px;
 
   p {
-    font-family: 'Yellowtail', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 2rem;
   }
 `;
